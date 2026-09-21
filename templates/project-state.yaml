@@ -1,0 +1,30 @@
+schema_version: "0.1"
+project:
+  id: ""
+  name: ""
+  slug: ""
+  created_at: ""
+  updated_at: ""
+
+workflow:
+  current_stage: "00_project_init"
+  current_gate: null
+  next_action: ""
+  status: "active"
+
+approved:
+  concept_direction: null
+  sketch_candidate: null
+  character_master_version: null
+  character_dna_version: null
+  visual_dna_version: null
+
+references:
+  map_path: "01_references/reference-map.md"
+
+assets:
+  manifest_path: "00_project/asset-manifest.csv"
+
+notes:
+  blockers: []
+  assumptions: []
