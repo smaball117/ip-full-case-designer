@@ -1,0 +1,41 @@
+schema_version: "0.1"
+visual_identity:
+  version: "v0"
+  concept: ""
+
+logo:
+  primary: ""
+  variants: []
+  usage_logic: ""
+
+color_roles:
+  primary: ""
+  secondary: []
+  neutral: []
+  accents: []
+
+typography:
+  display: ""
+  supporting: ""
+  body: ""
+  spacing_notes: ""
+
+graphics:
+  super_symbol: ""
+  motifs: []
+  icon_style: ""
+  pattern_logic: ""
+  outline_logic: ""
+
+layout:
+  grid: ""
+  hierarchy: ""
+  spacing: ""
+  character_to_type_relationship: ""
+
+image_language:
+  illustration: ""
+  3d: ""
+  photography: ""
+
+prohibitions: []
