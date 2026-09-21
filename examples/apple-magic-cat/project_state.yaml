@@ -7,13 +7,13 @@ project:
   updated_at: "2026-09-21"
 
 workflow:
-  current_stage: "02_concept_directions"
-  current_gate: "A"
-  next_action: "Create and compare five structurally different IP concept directions before locking the world premise."
+  current_stage: "03_deep_ip_brief"
+  current_gate: null
+  next_action: "Complete the Deep IP Brief for the approved A-led concept with limited E dessert-magic behavior."
   status: "active"
 
 approved:
-  concept_direction: null
+  concept_direction: "A Wish Keeper + limited E Dessert Magician behavior"
   sketch_candidate: null
   character_master_version: null
   character_dna_version: null
@@ -23,3 +23,4 @@ notes:
   blockers: []
   assumptions:
     - "The current 3D cat exploration is treated as visual research, not yet a locked Character Master."
+    - "Red apple remains the primary wish-container symbol; dessert magic is a secondary celebration behavior only."
