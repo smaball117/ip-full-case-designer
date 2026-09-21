@@ -1,0 +1,25 @@
+schema_version: "0.1"
+project:
+  id: "apple-magic-cat"
+  name: "Apple Magic Cat"
+  slug: "apple-magic-cat"
+  created_at: "2026-09-21"
+  updated_at: "2026-09-21"
+
+workflow:
+  current_stage: "02_concept_directions"
+  current_gate: "A"
+  next_action: "Create and compare five structurally different IP concept directions before locking the world premise."
+  status: "active"
+
+approved:
+  concept_direction: null
+  sketch_candidate: null
+  character_master_version: null
+  character_dna_version: null
+  visual_dna_version: null
+
+notes:
+  blockers: []
+  assumptions:
+    - "The current 3D cat exploration is treated as visual research, not yet a locked Character Master."
