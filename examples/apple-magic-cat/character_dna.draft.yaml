@@ -1,0 +1,44 @@
+schema_version: "0.1"
+status: "draft_not_locked"
+
+character:
+  name: ""
+  species_or_entity: "cream-white cat"
+  role: "magic apprentice"
+  personality:
+    - gentle
+    - quiet
+    - curious
+    - slightly shy
+
+identity_candidates:
+  silhouette:
+    head_shape: "very large, wide, slightly flattened rounded head"
+    body_shape: "very small compact body"
+    head_body_ratio: "extreme oversized-head / tiny-body"
+    limbs: "short, thick, rounded"
+  face:
+    feature_position: "low on the face with large forehead space"
+    eyes: "small round or bean-like"
+    eyebrows: "small, short, expressive"
+    nose: "tiny pink/red"
+    mouth: "tiny but lively"
+    cheeks: "soft pink gradient with short cheek marks"
+  color:
+    base: "cream white"
+    identity: "apple red"
+    supporting:
+      - soft pink
+      - cream yellow
+      - small light green
+  symbols:
+    primary: "red apple"
+    secondary:
+      - bow
+      - small stars
+      - magic wand
+  material: "smooth soft vinyl / slightly glossy resin"
+
+notes:
+  - "Props should remain small and secondary to the face."
+  - "This file is only a draft. Gate C is required before identity lock."
