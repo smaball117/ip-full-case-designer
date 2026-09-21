@@ -1,0 +1,47 @@
+schema_version: "0.1"
+character:
+  name: ""
+  species_or_entity: ""
+  role: ""
+  personality: []
+  flaw_or_tension: ""
+  recurring_behavior: ""
+
+identity_lock:
+  silhouette:
+    head_shape: ""
+    body_shape: ""
+    head_body_ratio: ""
+    limbs: ""
+  face:
+    feature_position: ""
+    eyes: ""
+    eyebrows: ""
+    nose: ""
+    mouth: ""
+    cheeks: ""
+  color:
+    base: ""
+    identity: ""
+    supporting: []
+  symbols:
+    primary: ""
+    secondary: []
+  material: ""
+  signature_accessories: []
+
+allowed_to_change:
+  - expression
+  - pose
+  - outfit
+  - small props
+  - scene
+
+requires_version_change:
+  - core silhouette
+  - facial construction
+  - identity colors
+  - primary symbol
+  - species_or_entity
+
+known_drift_risks: []
