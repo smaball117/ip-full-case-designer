@@ -1,0 +1,39 @@
+schema_version: "0.2"
+status: "active_theme_pool"
+
+themes:
+  W01_wish_check_in:
+    name_cn: "可可的愿望寄存处"
+    name_en: "COCO'S WISH CHECK-IN"
+    narrative_node: "collect"
+    emotional_goal: "被好好收下、被陪伴"
+    hero_action: "可可抱着或接收一颗愿望苹果"
+    hero_symbol_state: "红苹果，内部可见一颗奶油黄星星"
+    recommended_layouts:
+      - "L01_hero_center"
+      - "L02_character_left"
+    density: "low"
+
+  W02_wish_repair:
+    name_cn: "可可的愿望修补室"
+    name_en: "COCO'S WISH REPAIR ROOM"
+    narrative_node: "repair"
+    emotional_goal: "失败也可以再来一次"
+    hero_action: "可可修补一颗变青的苹果"
+    hero_symbol_state: "青苹果正在恢复，星星尚未点亮"
+    recommended_layouts:
+      - "L04_symbol_hero"
+      - "L05_story_scene"
+    density: "low"
+
+  W03_star_graduation:
+    name_cn: "可可的星星结业夜"
+    name_en: "COCO'S LITTLE STAR NIGHT"
+    narrative_node: "complete"
+    emotional_goal: "完成一件事情的小小成就感"
+    hero_action: "可可举起一颗刚亮星的苹果"
+    hero_symbol_state: "红苹果 + 明亮星星"
+    recommended_layouts:
+      - "L01_hero_center"
+      - "L04_symbol_hero"
+    density: "low"
