@@ -1,0 +1,42 @@
+schema_version: "0.2"
+status: "approved_core"
+
+ip_core:
+  name_cn: "可可"
+  name_en: "Coco"
+  brand_lockup: "HI COCO"
+  core_promise: "替人收好那些还没有说出口的小愿望，并陪它们走到完成。"
+  emotional_value:
+    - "陪伴"
+    - "完成感"
+    - "一点点甜蜜奖励"
+  personality_triangle:
+    - "勇敢"
+    - "贪吃"
+    - "粘人"
+  useful_flaw: "容易被好吃的东西分心，也总是先顾别人的愿望。"
+  world_role: "魔法学院的愿望收藏师学徒"
+  audience: "年轻女性"
+  commercial_territory:
+    - "手办"
+    - "毛绒"
+    - "表情包"
+    - "文创"
+    - "礼赠"
+    - "主题快闪"
+  must_avoid:
+    - "太幼稚"
+    - "太日漫"
+    - "太复杂"
+    - "太甜腻"
+
+super_symbol:
+  name: "愿望苹果"
+  narrative_function: "收集并保存一个愿望或任务"
+  success_state: "事情完整完成后，苹果内部亮起一颗星星"
+  failure_state: "苹果变成青色"
+  celebration_behavior: "成功后偶尔变出一个很小的甜点或礼物"
+  secondary_symbols:
+    - "星星"
+    - "蝴蝶结"
+    - "魔法学院任务标记"
