@@ -18,7 +18,7 @@
 - [x] add Prompt Compiler
 - [x] add Reference Router
 - [x] add QA Engine
-- [ ] convert Coco into the first complete system dataset
+- [x] convert Coco into the first complete system dataset
 - [ ] validate one poster with no external composition reference
 - [ ] validate one merchandise set from system rules
 - [ ] validate one offline concept from narrative rules
