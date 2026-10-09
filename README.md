@@ -1,92 +1,128 @@
 # IP Full Case Designer
 
-A reusable AI skill for building an **original character IP as a design system**, not a chain of reference-image adaptations.
+A **reference-driven IP creative full-case Skill**.
 
-> 核心原则：**先建立系统，再生产内容。参考图是可选输入，不是设计发动机。**
+The user brings an idea, visual references and ongoing feedback.
+The Agent turns those inputs into a complete IP project, from creative directions and character development to logo, posters, merchandise and offline applications.
+
+> 核心原则：**用户提供灵感与审美判断，Skill 负责创意整理、连续执行、风格统一和完整交付。**
+
+## What it does
 
 ```text
-Idea / Brief
-    ↓
-IP Core
-    ↓
-5 Concept Directions
-    ↓ Gate A
-Deep Brief + Narrative Engine
-    ↓
-5 Form Explorations
-    ↓ Gate B
-Character Master
-    ↓ Gate C
-Character DNA
-    ↓
-Character System
-    ↓
-Visual DNA + Typography + Graphics + Layout Grammar
-    ↓ Gate D
-Theme Engine
-    ↓
-Campaign / Merchandise / Offline
-    ↓
-Case Study + Review
+Idea + References
+      ↓
+Reference Analysis
+      ↓
+5 Creative Directions
+      ↓  GATE A
+IP Setting Sheet
+      ↓
+5 Character Sketches
+      ↓  GATE B
+Character Final / 3D
+      ↓  GATE C
+Turnaround
+Expressions
+Actions
+Outfits
+      ↓
+2D Character Assets
+      ↓
+Logo / Typography
+      ↓
+Poster / Campaign KV
+      ↓
+Merchandise
+      ↓
+Offline Applications
+      ↓
+Final Review / Case Package
 ```
 
-## v0.2 architecture
+## This Skill is not
+
+- a single-image generator;
+- a prompt-only tool;
+- a fully automatic no-reference design system;
+- a "swap my character into this reference" tool;
+- a rigid pipeline that ignores user choices.
+
+## Working style
+
+The user can feed references gradually.
+
+Examples:
+- character face reference;
+- proportion reference;
+- clothing reference;
+- material reference;
+- typography reference;
+- poster reference;
+- merchandise reference;
+- offline-space reference.
+
+The Agent identifies what each reference should control, then uses it at the appropriate stage.
+
+## Three important approvals
+
+- **Gate A — Creative Direction**
+- **Gate B — Character Sketch**
+- **Gate C — Character Final**
+
+After Gate C, the approved character becomes the primary identity anchor for later work.
+
+## Final deliverable
+
+```text
+PROJECT_NAME/
+├── 01_brief/
+├── 02_references/
+├── 03_concept-directions/
+├── 04_sketch/
+├── 05_character-final/
+├── 06_3d/
+├── 07_turnaround/
+├── 08_expressions/
+├── 09_actions/
+├── 10_outfits/
+├── 11_2d-assets/
+├── 12_logo-typography/
+├── 13_posters/
+├── 14_merchandise/
+├── 15_offline/
+└── 16_review/
+```
+
+The result is a **complete IP asset package**, not one final image.
+
+## Architecture
 
 ```text
 SKILL.md
-├── systems/
-│   ├── 01_ip-core/
-│   ├── 02_character/
-│   ├── 03_visual-language/
-│   ├── 04_layout/
-│   ├── 05_campaign/
-│   ├── 06_application/
-│   └── 07_engine/
-├── references/        # legacy + task execution details
+├── docs/
+│   └── SKILL_POSITIONING_v0.3.md
+├── references/
+│   ├── workflow.md
+│   ├── reference-analysis.md
+│   ├── character-design.md
+│   ├── character-consistency.md
+│   ├── visual-identity.md
+│   ├── application-system.md
+│   └── qa-review.md
 ├── templates/
+├── systems/          # optional support modules
 └── examples/
     └── apple-magic-cat/
 ```
-
-## What changed in v0.2
-
-v0.1 was mainly a workflow orchestrator. Real-world testing showed that this still encouraged:
-```text
-reference → imitate structure → replace character
-```
-
-v0.2 adds the missing design-system layer:
-
-- **IP Core** — why the IP exists
-- **Narrative Engine** — where themes come from
-- **Character DNA** — what keeps the character on-model
-- **Visual DNA** — how the brand world looks
-- **Shape Grammar** — how new forms are translated
-- **Layout Grammar** — reusable compositions without a reference
-- **Theme Engine** — campaigns derived from world rules
-- **Prompt Compiler** — compact prompts generated from the system
-- **Reference Router** — references affect named variables only
-- **QA Engine** — system-based validation
-
-## Default reference policy
-
-1. **Original Design** — default.
-2. **Reference Assisted** — reference controls a named variable.
-3. **Adaptation** — only on explicit request.
-
-## Four hard gates
-
-- **Gate A:** concept
-- **Gate B:** sketch
-- **Gate C:** Character DNA
-- **Gate D:** Design System / Visual DNA
 
 ## Test project
 
 **可可 / Coco — Apple Magic Cat**
 
-The Coco project is the first real validation case and is being used to expose missing rules, prompt duplication, reference over-dependence, and system gaps.
+Coco is the first real project used to validate the workflow through:
+character exploration → 3D → expressions → outfits → flat illustration → logo → posters → merchandise / offline.
 
 ## Version
 
-`0.2.0-dev` — design-system architecture.
+`0.3.0-dev` — reference-driven full-case workflow.
