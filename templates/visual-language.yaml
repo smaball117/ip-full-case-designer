@@ -1,0 +1,39 @@
+schema_version: "0.2"
+status: "draft"
+
+illustration:
+  mode: ""
+  outline: ""
+  fills: ""
+  gradients: ""
+  shadow: ""
+  texture: ""
+  detail_level: ""
+
+color:
+  field:
+    value: ""
+    ratio: ""
+  character_base:
+    value: ""
+    ratio: ""
+  identity:
+    value: ""
+    ratio: ""
+  accents: []
+  state_colors: {}
+
+composition:
+  character_scale: ""
+  face_protection_zone: ""
+  max_supporting_symbols: 5
+  background_complexity: ""
+  negative_space: ""
+
+typography:
+  brand_wordmark: ""
+  campaign_display: ""
+  supporting: ""
+  text_policy: ""
+
+prohibitions: []
