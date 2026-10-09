@@ -1,0 +1,26 @@
+schema_version: "0.2"
+presets:
+  L01_hero_center:
+    title_zone: "top"
+    character_zone: "center-lower"
+    density: "low"
+  L02_character_left:
+    title_zone: "right"
+    character_zone: "left"
+    density: "low"
+  L03_character_right:
+    title_zone: "left"
+    character_zone: "right"
+    density: "low"
+  L04_symbol_hero:
+    title_zone: "flex"
+    character_zone: "secondary"
+    density: "low"
+  L05_story_scene:
+    title_zone: "top-or-side"
+    character_zone: "hero"
+    density: "medium"
+  L06_collection_grid:
+    title_zone: "optional"
+    character_zone: "grid"
+    density: "structured"
