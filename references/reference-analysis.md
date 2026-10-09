@@ -1,6 +1,9 @@
 # Reference Analysis
 
-References are instructions only after their roles are assigned.
+References are a major input to this Skill.
+
+The purpose of analysis is not to weaken the reference.
+The purpose is to understand **what the user wants from it** so the Agent can combine references without visual conflict or accidental copying.
 
 ## Reference Map
 
@@ -9,69 +12,104 @@ For every important reference, record:
 ```text
 Reference ID:
 Role:
-Learn:
-Do not learn:
+Use / Learn:
+Do not inherit:
 Priority:
 Used in stage:
 ```
 
-## Allowed roles
+## Common roles
 
-- character proportion
+- character silhouette
 - face / expression
+- eye language
+- body proportion
 - material / rendering
 - pose / camera
 - outfit
+- palette
 - logo
 - typography
 - poster composition
 - graphic language
 - merchandise
+- packaging
 - offline space
-- color
 - atmosphere
 
-A single reference may have multiple roles only when necessary.
+A reference may have several roles when the user's intent clearly requires it.
 
-## Rule: role before resemblance
+## Strong reference use is allowed
 
-Do not say "make it like this reference" without specifying what "like" means.
+If the user says:
+- "use this face";
+- "follow this outfit";
+- "use this composition";
+- "use this material";
+- "use this font feeling";
+
+treat that instruction as high priority.
+
+Still isolate the intended variable instead of importing unrelated content.
 
 Example:
 
 ```text
-Role: character proportion + material
-Learn:
-- oversized head / tiny body
-- low facial placement
-- smooth soft-vinyl finish
-
-Do not learn:
-- original species
-- original colors
-- original costume
-- original props
+REF-03
+Role: outfit
+Use / Learn:
+- short cape silhouette
+- red / cream layering
+- oversized bow
+Do not inherit:
+- model face
+- human body proportion
+- photography background
+Priority: high
+Used in stage: outfit
 ```
 
 ## Multiple references
 
-Do not feed every reference into every generation.
+Do not automatically feed every available reference into each generation.
 
-Choose the smallest useful set:
-1. primary identity anchor;
-2. current variable reference, such as outfit or poster;
-3. optional material/composition reference only if needed.
+Prefer:
+1. latest approved character anchor;
+2. current task reference;
+3. optional style / material reference.
 
-If references conflict, resolve priority before generating.
+Add more only when they solve a specific problem.
 
-## Reference translation
+## Conflict rule
 
-When using an external reference, extract design logic rather than copying distinctive original content.
+If references conflict:
+- obey explicit user priority;
+- otherwise use the most stage-relevant reference;
+- preserve approved character identity;
+- do not silently blend incompatible instructions.
 
-Examples:
-- outfit: silhouette, layering, palette, key accessory;
-- poster: hierarchy, grid, spacing, role of character;
-- logo: weight, rhythm, curvature, emblem logic;
-- space: zoning, material mood, circulation, focal installation.
+## Translation by task
 
-Record what must not be copied.
+### Character
+Extract silhouette, face, proportion and costume logic.
+
+### Outfit
+Extract silhouette, layering, palette, material and key accessory.
+
+### Logo / typography
+Extract weight, roundness, curvature, rhythm, spacing and symbol integration.
+
+### Poster
+Extract hierarchy, grid, negative space, character scale, density and title relationship.
+
+### Merchandise
+Extract product type, graphic scale, placement and finish.
+
+### Offline
+Extract zoning, focal installation, circulation, scale and material mood.
+
+## Reference lock-in rule
+
+A new reference should influence the requested stage, not rewrite every earlier approval.
+
+Once the user approves a character, that character becomes the primary anchor for later outputs.
