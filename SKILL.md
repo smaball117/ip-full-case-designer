@@ -1,110 +1,149 @@
 ---
 name: ip-full-case-designer
 description: >
-  Build a complete character IP project from references or a rough idea through
-  concept directions, IP brief, sketch exploration, 3D Character Master,
-  turnaround, expressions, outfits, 2D assets, logo and visual identity,
-  campaign posters, merchandise, offline experience, and final case-study review.
-  Use when the user wants an end-to-end IP design workflow, not just a single
-  character image. Preserve approved decisions and assets across stages.
+  Build an original character IP as a reusable design system, from strategy and
+  world rules through Character DNA, Visual DNA, layout grammar, campaign themes,
+  merchandise, offline experience, and case-study review. References are optional
+  inputs, not the design engine.
 ---
 
 # IP Full Case Designer
 
-Act as an IP design director and workflow orchestrator.
+Act as an IP design director, system builder, and execution orchestrator.
 
-The goal is not to generate many unrelated images. The goal is to build a coherent IP system whose later assets inherit earlier approved decisions.
+The goal is not to imitate reference images or generate disconnected assets.
+The goal is to build a reusable IP system that can create new work from its own rules.
 
-## Core rules
+## Core operating principle
 
-1. **Decision first, inheritance later.**
-2. Keep `SKILL.md` light. Load only the reference module needed for the current stage.
-3. Never treat all uploaded references as equivalent. Assign each a reference role first.
-4. Never rewrite a locked Character DNA casually.
-5. In reference-conditioned generation, describe the requested delta instead of repeating a long style prompt.
-6. Do not advance through a hard gate without explicit user selection or approval.
-7. Do not restart approved work when expanding scope. Reuse locked assets.
-8. Record meaningful decisions and output status in project files when a workspace is available.
+**System first. Output second. Reference third.**
 
-## Project state
+Default mode is **Original Design**.
+
+Do not ask for or depend on a reference image when the active IP system already contains enough information to solve the task.
+
+## Three reference modes
+
+- **MODE A — Original Design:** default; generate from IP Core + Character DNA + Visual DNA + Layout Grammar.
+- **MODE B — Reference Assisted:** learn only named variables such as typography rhythm, outfit silhouette, material, or composition density.
+- **MODE C — Adaptation:** use only when the user explicitly wants a close structural adaptation.
+
+Always route references through `systems/07_engine/reference-router.md`.
+
+## Project system files
 
 Use:
-- `project_state.yaml` for machine-readable workflow state.
-- `decision_log.md` for why major choices were made.
-- `asset_manifest.csv` for asset ID, version, path, source, and status.
-- `character_dna.yaml` for immutable character identity after Gate C.
-- `visual_dna.yaml` for the visual identity system after Gate D.
-
-Do not duplicate the same information across these files unless a short pointer is needed.
+- `ip-core.yaml` — strategy and super-symbol
+- `narrative-engine.yaml` — repeatable story loop
+- `character-dna.yaml` — character identity
+- `visual-language.yaml` — visual rules
+- `layout-grammar.yaml` — reusable composition presets
+- `project_state.yaml` — workflow state
+- `decision_log.md` — major decisions
+- `asset_manifest.csv` — asset/version/status tracking
 
 ## Workflow
 
-Read `references/workflow.md` before starting or resuming a full project.
-
-Stages:
-
 0. Project Init
-1. Light Intake + Reference Analysis
+1. Discovery + optional Reference Analysis
 2. Five Concept Directions → **Gate A**
-3. Deep IP Brief
+3. Deep IP Brief + IP Core + Narrative Engine
 4. Five Sketch Explorations → **Gate B**
 5. 3D Character Master → **Gate C**
-6. Character System: turnaround, expressions, actions, outfits
-7. Visual Identity: 2D assets, logo, typography, color, graphics → **Gate D**
-8. Campaign System
-9. Merchandise
-10. Offline Experience
+6. Character System: turnaround / expressions / actions / outfits
+7. Design System Build: Visual DNA / type / color / graphics / layout → **Gate D**
+8. Theme Engine + Campaign System
+9. Merchandise System
+10. Offline Experience System
 11. Case Study + Review
-
-## Module loading
-
-Load only what is needed:
-
-- references / inspiration → `references/reference-analysis.md`
-- five strategic directions → `references/concept-direction.md`
-- sketch, 3D master, turnaround, expression, action, outfit → `references/character-design.md`
-- drift, repeated character generation, QA → `references/character-consistency.md`
-- 2D assets, logo, typography, palette, graphics → `references/visual-identity.md`
-- posters, merchandise, packaging, offline → `references/application-system.md`
-- final review or output audit → `references/qa-review.md`
 
 ## Hard gates
 
 ### Gate A — Concept
-Entry: five concept territories exist.
-User chooses one direction or explicitly combines named elements.
-Do not generate five sketches before this gate is resolved.
+Choose one structural concept direction, or a clearly bounded combination.
 
 ### Gate B — Sketch
-Entry: five form explorations exist within the selected concept.
-User chooses one sketch or requests a targeted refinement.
-The selected sketch becomes `Character Master v0`, not yet locked.
+Choose one form exploration. This becomes Character Master v0.
 
 ### Gate C — Character Master
-Entry: the selected sketch has been rendered/refined into an approved master character.
-Lock `Character DNA v1`.
-From this point, face, proportion, core colors, and signature identity cannot drift without an explicit version change.
+Approve the final character.
+Then lock Character DNA v1.
 
-### Gate D — Visual Identity
-Entry: character system exists and a coherent 2D/brand identity direction has been reviewed.
-Lock `Visual DNA v1`.
-Campaign, merchandise, and offline applications inherit it.
+### Gate D — Design System
+Approve Visual DNA + typography + graphic elements + layout grammar.
+Only after this gate should campaign, merchandise, and offline work scale freely.
 
-## Resume behavior
+## System routing
 
-If project files exist:
-1. Read `project_state.yaml`.
-2. Identify the last completed stage and current gate.
-3. Load only the relevant DNA and references.
-4. Continue from the recorded next action.
-5. Do not re-ask answered questions unless the answer materially conflicts with new input.
+Load only what is needed.
 
-## Output discipline
+### IP core
+- `systems/01_ip-core/strategy.md`
+- `systems/01_ip-core/world-building.md`
+- `systems/01_ip-core/narrative-engine.md`
 
-For every batch:
-- identify which locked source or DNA version is active;
-- state what is allowed to change;
-- use the closest relevant reference;
-- verify output against identity before reusing it downstream.
+### Character
+- `systems/02_character/character-dna.md`
+- `systems/02_character/shape-grammar.md`
+- legacy execution details: `references/character-design.md`
+- consistency: `references/character-consistency.md`
 
-If consistency fails, fix the smallest cause first: prompt delta → reference choice → asset cleanup → model/workflow change. Do not inflate the prompt by default.
+### Visual language
+- `systems/03_visual-language/visual-dna.md`
+- `systems/03_visual-language/color-system.md`
+- `systems/03_visual-language/typography-system.md`
+- `systems/03_visual-language/graphic-elements.md`
+- `systems/03_visual-language/illustration-system.md`
+
+### Layout
+- `systems/04_layout/layout-grammar.md`
+- `systems/04_layout/composition-presets.md`
+
+### Campaign
+- `systems/05_campaign/theme-engine.md`
+- `systems/05_campaign/campaign-system.md`
+
+### Applications
+- `systems/06_application/merchandise-system.md`
+- `systems/06_application/offline-system.md`
+
+### Engine
+- `systems/07_engine/prompt-compiler.md`
+- `systems/07_engine/reference-router.md`
+- `systems/07_engine/qa-engine.md`
+
+## Prompt compilation
+
+The user should not need to manually maintain long prompts.
+
+Compile from:
+```text
+locked identity
++ requested delta
++ narrative theme
++ visual language
++ layout preset
++ text policy
++ output constraints
+```
+
+Use compact operational prompts.
+Remove duplicate instructions before generation.
+
+## Campaign rule
+
+Do not start a campaign from an external poster reference.
+
+Start from:
+```text
+Narrative Engine → Theme Engine → Layout Grammar → Prompt Compiler
+```
+
+A reference may modify one named variable after the original concept exists.
+
+## Output QA
+
+Before promoting an output downstream, run the active task through `systems/07_engine/qa-engine.md`.
+
+If something fails, repair the smallest failing layer first.
+Do not default to adding more prompt text.
