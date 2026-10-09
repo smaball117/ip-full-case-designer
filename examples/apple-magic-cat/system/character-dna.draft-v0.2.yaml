@@ -1,0 +1,64 @@
+schema_version: "0.2"
+status: "draft_pending_gate_c"
+
+character:
+  name: "可可 / Coco"
+  species_or_entity: "奶油白小猫"
+  role: "魔法学院愿望收藏师学徒"
+  personality:
+    - "勇敢"
+    - "贪吃"
+    - "粘人"
+
+silhouette:
+  head_shape: "超大、偏宽的柔软猫头，轮廓圆润"
+  body_shape: "极小、短厚、紧凑"
+  head_body_ratio: "明显大头小身，头部为绝对视觉中心"
+  limbs: "短、粗、圆"
+  ears: "明确三角猫耳，不能弱化成熊耳"
+  tail: "蓬松、圆润、体量感明显"
+
+face:
+  eyes: "大猫瞳，圆润但保留猫感"
+  pupils: "深棕色大瞳孔"
+  highlights: "星星形主高光 + 极少量小圆高光"
+  eyebrows: "短小、圆润、负责情绪"
+  nose: "小巧红棕或粉红鼻"
+  mouth: "小嘴，可轻微吐舌"
+  cheeks: "柔和粉色腮红 + 短腮线"
+  avoid:
+    - "熊式大口鼻区"
+    - "巨大动漫眼白"
+    - "成人眉形"
+
+signature:
+  primary_symbol: "愿望苹果"
+  default_headwear: "红色苹果主题魔法帽"
+  default_neck_detail: "红色蝴蝶结"
+  magic_prop: "小型苹果魔法棒"
+  eye_symbol: "星星瞳孔高光"
+
+prop_scale:
+  rule: "所有配件都明显弱于头部与脸"
+  apple: "小到中等，作为陪伴型道具"
+  wand: "短粗小型"
+  stars: "少量"
+
+material_modes:
+  three_d_master: "奶油白植绒 / 细短绒感收藏玩具"
+  two_d_brand: "纯扁平插画，不表现毛发纹理"
+
+flexible:
+  - "表情"
+  - "动作"
+  - "换装"
+  - "帽子可在主题换装中替换"
+  - "小型道具"
+  - "场景"
+
+requires_version_change:
+  - "猫的基本头型"
+  - "大猫瞳与星星高光"
+  - "奶油白主体"
+  - "愿望苹果核心符号"
+  - "大头小身比例"
