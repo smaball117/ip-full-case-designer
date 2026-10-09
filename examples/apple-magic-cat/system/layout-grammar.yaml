@@ -1,0 +1,43 @@
+schema_version: "0.2"
+status: "draft_for_gate_d"
+
+presets:
+  L01_hero_center:
+    use: "品牌主KV / 竖版"
+    title_zone: "上方 25–35%"
+    character_zone: "中下部"
+    character_scale: "45–60%"
+    supporting_elements: "0–5"
+    note: "单角色大构图，大留白"
+
+  L02_character_left:
+    use: "16:9 横版KV"
+    title_zone: "右侧或右上"
+    character_zone: "左侧 45–55%"
+    supporting_elements: "0–4"
+    note: "不要用多元素填满横向空间"
+
+  L03_character_right:
+    use: "系列横版 / 反向构图"
+    title_zone: "左侧"
+    character_zone: "右侧"
+    supporting_elements: "0–4"
+
+  L04_symbol_hero:
+    use: "世界观规则海报"
+    title_zone: "上方或侧边"
+    character_zone: "小到中"
+    hero_symbol: "巨大愿望苹果 / 星星状态"
+    note: "用一个巨大符号讲规则"
+
+  L05_story_scene:
+    use: "故事型Campaign"
+    rule: "一个角色 + 一个地点 + 一个动作"
+    background_complexity: "低"
+    supporting_elements: "0–5"
+
+  L06_collection_grid:
+    use: "表情 / 换装 / 动作"
+    grid: "3x3 / 3x2 / 4-view"
+    background: "统一"
+    rule: "同一角色DNA，不在格子里重新设计角色"
