@@ -1,0 +1,15 @@
+schema_version: "0.2"
+narrative_loop:
+  trigger: ""
+  task: ""
+  attempt: ""
+  failure_state: ""
+  repair_action: ""
+  success_state: ""
+  reward: ""
+  restart: ""
+
+theme_sources:
+  core_brand: []
+  seasonal: []
+  content: []
