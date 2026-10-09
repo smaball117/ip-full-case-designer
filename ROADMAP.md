@@ -1,30 +1,49 @@
 # Roadmap
 
-## v0.1
-- workflow architecture
-- modular references
-- project templates
-- Apple Magic Cat test scaffold
+## v0.1 — Workflow architecture
+- [x] workflow orchestration
+- [x] modular references
+- [x] project templates
+- [x] Apple Magic Cat scaffold
 
-## v0.2
-- run Apple Magic Cat through Gate A and Gate B
-- refine concept and sketch evaluation criteria
-- add prompt templates only after real test evidence
+## v0.2 — Design-system rebuild
+- [x] identify reference-dependence failure
+- [x] add IP Core system
+- [x] add Narrative Engine
+- [x] add Character DNA + Shape Grammar
+- [x] add Visual DNA system
+- [x] add Typography / Color / Graphic / Illustration systems
+- [x] add Layout Grammar + presets
+- [x] add Theme Engine + Campaign System
+- [x] add Prompt Compiler
+- [x] add Reference Router
+- [x] add QA Engine
+- [ ] convert Coco into the first complete system dataset
+- [ ] validate one poster with no external composition reference
+- [ ] validate one merchandise set from system rules
+- [ ] validate one offline concept from narrative rules
 
-## v0.3
-- test Character Master → turnaround → expression → outfit consistency
-- add drift scoring and closest-reference rules
+## v0.3 — Character consistency
+- [ ] lock Coco Character DNA v1
+- [ ] test turnaround
+- [ ] test expression system
+- [ ] test outfit translation
+- [ ] score and repair drift
 
-## v0.4
-- test 2D asset translation and visual identity modules
-- integrate or reference typography workflow where useful
+## v0.4 — Visual identity production
+- [ ] lock Coco Visual DNA v1
+- [ ] production-ready logo cleanup workflow
+- [ ] typography role tests
+- [ ] 2D asset library
 
-## v0.5
-- test campaign, merchandise, and offline modules
-- build final case-study template
+## v0.5 — Application validation
+- [ ] campaign family
+- [ ] merchandise family
+- [ ] offline experience
+- [ ] final case-study template
 
 ## v1.0
-- complete Apple Magic Cat case
-- clean duplicated rules
-- document reusable workflow
-- decide public release readiness
+- [ ] complete Coco case
+- [ ] remove redundant legacy rules
+- [ ] document reusable workflow
+- [ ] public release readiness review
