@@ -1,161 +1,347 @@
-# Workflow Control
+# Workflow Control v0.3
 
-This file defines the end-to-end state machine. Keep execution practical: ask only questions that change the design.
+This workflow matches the intended working style:
 
-## Stage 0 — Project Init
+**the user brings ideas and references gradually, and the agent develops them into a complete IP case.**
 
-Create project state and folders when a writable workspace exists.
+Do not force the user to complete every stage in one session.
+Do not restart approved work when the project resumes later.
 
-Recommended project folders:
+## Stage 0 — Project Setup
+
+Recommended folders:
 
 ```text
-projects/<project-name>/
-├── 00_project/
-├── 01_references/
-├── 02_concept/
-├── 03_sketch/
-├── 04_character_master/
-├── 05_character_system/
-│   ├── turnaround/
-│   ├── expressions/
-│   ├── actions/
-│   └── outfits/
-├── 06_visual_identity/
-│   ├── 2d_assets/
-│   ├── logo/
-│   ├── typography/
-│   └── graphics/
-├── 07_campaign/
-├── 08_merchandise/
-├── 09_offline/
-├── 10_case_study/
-└── 11_review/
+PROJECT_NAME/
+├── 01_brief/
+├── 02_references/
+├── 03_concept-directions/
+├── 04_sketch/
+├── 05_character-final/
+├── 06_3d/
+├── 07_turnaround/
+├── 08_expressions/
+├── 09_actions/
+├── 10_outfits/
+├── 11_2d-assets/
+├── 12_logo-typography/
+├── 13_posters/
+├── 14_merchandise/
+├── 15_offline/
+└── 16_review/
 ```
 
-## Stage 1 — Light Intake + Reference Analysis
+Create lightweight project state only.
+Do not generate heavy documentation before real decisions exist.
 
-If the user already gives a clear seed such as "white cat + red apple + bow + magician", do not ask redundant questions.
+## Stage 1 — Idea + Reference Intake
 
-Only resolve blockers:
-- core subject or species;
-- must-keep element;
-- desired emotional territory;
-- intended use if it changes design;
-- hard avoid list if any.
+Accept incomplete input.
 
-Analyze references before ideation. Use `reference-analysis.md`.
+The user may provide:
+- a sentence;
+- rough story;
+- mood;
+- one or many references;
+- an existing character;
+- specific likes and dislikes.
 
-## Stage 2 — Five Concept Directions
+Identify:
+- what the user wants to create;
+- what must be kept;
+- what should be avoided;
+- which references affect which parts.
 
-Generate five directions that differ structurally, not cosmetically.
+Ask only questions that materially change the next creative step.
 
-At least three of these should differ between directions:
-- world premise;
-- character motivation;
-- personality tension;
-- meaning of the super-symbol;
-- recurring behavior;
-- audience/commercial extension;
-- visual territory.
+Use `reference-analysis.md`.
 
-Stop at Gate A.
+## Stage 2 — Five Creative Directions
 
-## Stage 3 — Deep IP Brief
+Generate five genuinely different directions using the user's idea + references.
 
-After a concept is selected, complete the deeper brief:
-- one-line story;
-- worldview;
+Each direction should include:
+- direction name;
+- core concept;
+- character mood;
+- story / worldview hook;
+- visual emphasis;
+- commercial extension;
+- risk / caution.
+
+The five directions should not be five cosmetic variants.
+
+Stop at **Gate A**.
+
+The user may:
+- select one;
+- combine parts of up to two;
+- reject all and request another round.
+
+## Stage 3 — IP Setting Sheet
+
+After Gate A, consolidate a practical brief:
+
+- name / working name;
+- Chinese / English name when relevant;
+- identity / role;
 - personality;
-- small flaw;
-- likes/dislikes;
-- ability;
-- recurring behavior;
-- super-symbol;
-- secondary symbols;
+- useful flaw;
+- likes / dislikes;
+- world premise;
+- one-line story;
+- signature symbol;
+- palette tendency;
 - audience;
-- likely applications;
-- must-keep / must-avoid.
+- priority applications;
+- Must Keep;
+- Must Avoid.
 
-The brief should clarify identity, not become a novel.
+Mark assumptions clearly.
+Do not lock details the user has not approved.
 
-## Stage 4 — Five Sketch Explorations
+## Stage 4 — Five Character Sketch Explorations
 
-All five sketches share the selected concept and differ mainly in form:
+Use the approved setting plus current character references.
+
+Explore:
 - head silhouette;
-- ear placement;
+- face;
+- eyes;
+- ears / hair / horns;
 - body proportion;
-- hat silhouette;
-- bow placement;
-- symbol integration;
-- prop relationship.
+- costume silhouette;
+- prop relationship;
+- signature-symbol integration.
 
-Do not secretly change the concept between sketches.
+All five should still feel like the same IP concept.
 
-Stop at Gate B.
+The goal is comparison, not final rendering.
 
-## Stage 5 — Character Master
+Stop at **Gate B**.
 
-Selected sketch = Character Master v0.
+## Stage 5 — Character Final / 3D
 
-Then:
-1. create/refine the final 3D hero;
-2. test face, proportion, material and signature props;
-3. correct design drift;
-4. approve;
-5. write Character DNA v1.
+From the selected sketch:
 
-Only after approval does the character become locked.
+1. refine face and silhouette;
+2. refine proportions;
+3. refine costume and props;
+4. apply material references if supplied;
+5. create the hero render;
+6. repair identity drift from feedback.
 
-Stop at Gate C.
+Examples of targeted feedback:
+- "the face looks too much like a bear";
+- "make the cat pupils larger";
+- "use star-shaped eye highlights";
+- "use flocked material";
+- "make props smaller".
 
-## Stage 6 — Character System
+Stop at **Gate C** once the user approves the character.
 
-Generate in controlled batches:
-- turnaround;
-- expression sheet;
-- basic action sheet;
-- outfit sheet using user-provided clothing references when available.
+After Gate C, create/update `character_dna.yaml`.
 
-Use delta-only changes and closest-reference selection.
-
-## Stage 7 — Visual Identity
+## Stage 6 — Turnaround
 
 Create:
-- 2D flat character assets;
-- avatar / half-body / full-body / line / monochrome / sticker assets;
-- logo system;
-- typography direction;
-- color roles;
-- graphic elements and icon language.
+- front;
+- side;
+- back;
+- optional 3/4 hero.
 
-Do not treat 3D render style and brand graphic style as the same system.
+Preserve:
+- same face;
+- same proportions;
+- same costume;
+- same prop scale;
+- same material.
 
-Lock Visual DNA v1 at Gate D.
+The turnaround explains construction, not redesign.
 
-## Stage 8 — Campaign System
+## Stage 7 — Expression Sheet
 
-Analyze user poster references for:
-- information hierarchy;
-- title scale;
-- composition;
-- character-to-type relationship;
-- color rhythm;
-- graphic density.
+Default output may be 6 or 9 expressions.
 
-Create one hero KV first, then series extensions.
+Expressions should reveal personality, not only swap mouths.
 
-## Stage 9 — Merchandise
+Possible expressions:
+- greeting;
+- laugh;
+- cry;
+- angry;
+- surprised;
+- sleepy;
+- affection;
+- approval;
+- confusion.
 
-Use approved 2D assets and Visual DNA.
-Prioritize a small meaningful set before producing a catalog.
+Do not add text unless requested.
 
-## Stage 10 — Offline Experience
+## Stage 8 — Action Sheet
 
-First choose context: indoor, outdoor, market/event, pop-up, or exhibition.
+Use the character's story and recurring behavior.
 
-Then define one theme and user journey before rendering touchpoints.
+Possible actions:
+- holding the core symbol;
+- using the signature prop;
+- running;
+- sitting;
+- eating;
+- collecting;
+- repairing;
+- celebrating.
 
-## Stage 11 — Case Study + Review
+Actions should become reusable sticker / poster / merchandise assets.
 
-Package the design process and audit it using `qa-review.md`.
-Final review: Keep / Improve / Extend / Reuse.
+## Stage 9 — Outfit Sheet
+
+The user may continue feeding clothing references.
+
+For each outfit reference:
+1. extract silhouette;
+2. extract layering;
+3. extract palette;
+4. extract material;
+5. choose 1–2 key accessories;
+6. translate into the character's body and visual style.
+
+Do not inherit the reference person's anatomy or photography.
+
+Common outputs:
+- 3x3 outfit grid;
+- seasonal set;
+- themed set;
+- single outfit refinement.
+
+## Stage 10 — 2D Character Assets
+
+Translate the approved character into practical graphic assets:
+
+- flat full body;
+- half body;
+- avatar;
+- line art;
+- monochrome;
+- sticker;
+- small icons / signature symbols.
+
+The user may provide flat-illustration references.
+Use them to control graphic treatment while preserving character identity.
+
+## Stage 11 — Logo / Typography
+
+The user may provide logo / font references.
+
+First extract:
+- roundness;
+- weight;
+- rhythm;
+- curvature;
+- baseline;
+- spacing;
+- symbol integration.
+
+Then create:
+- Chinese mark;
+- English mark;
+- combination lockup;
+- color version;
+- monochrome version;
+- simplified mark when useful.
+
+Do not add random microcopy.
+
+## Stage 12 — Poster / Campaign KV
+
+The user may provide poster, typography and layout references.
+
+Before generating, identify:
+- theme;
+- what is learned from each reference;
+- character priority;
+- title hierarchy;
+- element density;
+- target ratio.
+
+Typical outputs:
+- 3:4 vertical;
+- 16:9 horizontal;
+- 1:1 social.
+
+Start with one strong hero KV before expanding a series.
+
+If feedback says:
+- **too crowded** → remove elements;
+- **too close to reference** → change concept structure;
+- **character too small** → enlarge character;
+- **unwanted small text** → prohibit all nonessential copy.
+
+## Stage 13 — Merchandise
+
+Use the assets already created.
+
+Possible:
+- figure;
+- plush;
+- badge;
+- acrylic stand;
+- keychain;
+- sticker;
+- postcard;
+- tote;
+- mug;
+- phone case;
+- blind-box packaging;
+- gift box.
+
+Choose a meaningful set rather than a random catalog.
+
+Use different asset types across products.
+
+## Stage 14 — Offline Applications
+
+The user may provide spatial references.
+
+First identify:
+- indoor;
+- outdoor;
+- pop-up;
+- market;
+- exhibition;
+- retail corner.
+
+Then create a coherent set:
+- entrance;
+- hero backdrop;
+- photo spot;
+- display unit;
+- standee;
+- wayfinding;
+- packaging / giveaway;
+- interactive element.
+
+Keep the character and theme recognizable.
+
+## Stage 15 — Final Review / Case Package
+
+Collect approved stages.
+
+Review with:
+- Keep;
+- Improve;
+- Extend;
+- Reuse.
+
+The final case should show the creative journey, not only final renders.
+
+## Resume rule
+
+When the user says "next", "continue", or provides a new reference:
+
+1. read current project state;
+2. identify the current stage;
+3. apply the new reference only where relevant;
+4. continue from the latest approved result.
+
+Do not reset the project.
