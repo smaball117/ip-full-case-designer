@@ -1,0 +1,17 @@
+schema_version: "0.2"
+ip_core:
+  name: ""
+  core_promise: ""
+  emotional_value: []
+  personality_triangle: []
+  useful_flaw: ""
+  world_role: ""
+  audience: ""
+  commercial_territory: []
+  must_avoid: []
+
+super_symbol:
+  name: ""
+  narrative_function: ""
+  success_state: ""
+  failure_state: ""
