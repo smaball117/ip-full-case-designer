@@ -1,84 +1,92 @@
 # IP Full Case Designer
 
-A reusable AI workflow skill for building a complete character IP system from reference analysis and concept exploration to character assets, visual identity, campaigns, merchandise, offline experiences, and project review.
+A reusable AI skill for building an **original character IP as a design system**, not a chain of reference-image adaptations.
 
-> 核心原则：**前面做决策，后面做继承。**
+> 核心原则：**先建立系统，再生产内容。参考图是可选输入，不是设计发动机。**
 
 ```text
-Reference / Idea
-      ↓
-Light Intake
-      ↓
+Idea / Brief
+    ↓
+IP Core
+    ↓
 5 Concept Directions
-      ↓  GATE A
-Deep IP Brief
-      ↓
-5 Sketch Explorations
-      ↓  GATE B
-3D Character Master
-      ↓  GATE C
+    ↓ Gate A
+Deep Brief + Narrative Engine
+    ↓
+5 Form Explorations
+    ↓ Gate B
+Character Master
+    ↓ Gate C
+Character DNA
+    ↓
 Character System
-(turnaround / expressions / actions / outfits)
-      ↓
-Visual Identity
-(2D assets / logo / typography / graphics)
-      ↓  GATE D
-Campaign System
-      ↓
-Merchandise
-      ↓
-Offline Experience
-      ↓
+    ↓
+Visual DNA + Typography + Graphics + Layout Grammar
+    ↓ Gate D
+Theme Engine
+    ↓
+Campaign / Merchandise / Offline
+    ↓
 Case Study + Review
 ```
 
-## Architecture
-
-The main `SKILL.md` is intentionally small. It acts as an **orchestrator** and loads detailed knowledge only when needed.
+## v0.2 architecture
 
 ```text
 SKILL.md
-├── references/
+├── systems/
+│   ├── 01_ip-core/
+│   ├── 02_character/
+│   ├── 03_visual-language/
+│   ├── 04_layout/
+│   ├── 05_campaign/
+│   ├── 06_application/
+│   └── 07_engine/
+├── references/        # legacy + task execution details
 ├── templates/
 └── examples/
     └── apple-magic-cat/
 ```
 
-## Why modular instead of one giant prompt?
+## What changed in v0.2
 
-A full IP case contains very different jobs. Keeping every rule active at once creates prompt noise, instruction competition, higher context cost, and harder debugging.
+v0.1 was mainly a workflow orchestrator. Real-world testing showed that this still encouraged:
+```text
+reference → imitate structure → replace character
+```
 
-This repository separates:
-- workflow control from design knowledge;
-- Character DNA from Brand Visual DNA;
-- locked assets from changeable variables;
-- reference intent from reference appearance;
-- project state from decision history.
+v0.2 adds the missing design-system layer:
 
-## Four hard approval gates
+- **IP Core** — why the IP exists
+- **Narrative Engine** — where themes come from
+- **Character DNA** — what keeps the character on-model
+- **Visual DNA** — how the brand world looks
+- **Shape Grammar** — how new forms are translated
+- **Layout Grammar** — reusable compositions without a reference
+- **Theme Engine** — campaigns derived from world rules
+- **Prompt Compiler** — compact prompts generated from the system
+- **Reference Router** — references affect named variables only
+- **QA Engine** — system-based validation
 
-- **Gate A — Concept:** choose one of five genuinely different IP directions.
-- **Gate B — Sketch:** choose one character form exploration.
-- **Gate C — Character Master:** approve the final 3D character and lock Character DNA v1.
-- **Gate D — Visual Identity:** approve the visual identity system and lock Visual DNA v1.
+## Default reference policy
 
-## Current status
+1. **Original Design** — default.
+2. **Reference Assisted** — reference controls a named variable.
+3. **Adaptation** — only on explicit request.
 
-**v0.1 — workflow architecture**
+## Four hard gates
 
-First test project: **Apple Magic Cat / 苹果魔法猫**.
+- **Gate A:** concept
+- **Gate B:** sketch
+- **Gate C:** Character DNA
+- **Gate D:** Design System / Visual DNA
 
-## Design philosophy
+## Test project
 
-1. Reference images must be assigned a role before use.
-2. Concept direction and form exploration are different stages.
-3. Character identity is locked only after the approved 3D master.
-4. Downstream generation should describe the delta, not re-describe the whole character.
-5. Use the closest approved reference for each generation.
-6. 3D character assets and 2D graphic assets should coexist.
-7. Every output has a status: `draft / revise / approved / rejected / locked`.
-8. Final review records `Keep / Improve / Extend / Reuse`.
+**可可 / Coco — Apple Magic Cat**
+
+The Coco project is the first real validation case and is being used to expose missing rules, prompt duplication, reference over-dependence, and system gaps.
 
 ## Version
 
-`0.1.0` — initial architecture.
+`0.2.0-dev` — design-system architecture.
