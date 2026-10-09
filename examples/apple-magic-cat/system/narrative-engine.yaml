@@ -1,0 +1,34 @@
+schema_version: "0.2"
+status: "draft"
+
+narrative_loop:
+  trigger: "收到一个没有说出口的小愿望"
+  task: "可可把愿望收进苹果，并接受学院任务"
+  attempt: "陪着愿望推进一件具体事情"
+  failure_state: "失败时苹果变成青色"
+  repair_action: "陪伴、修补、重新尝试"
+  success_state: "事情真正完成后，苹果内部亮起一颗星星"
+  reward: "偶尔用苹果魔法变出一份小甜点或小礼物"
+  restart: "接受下一个愿望"
+
+campaign_nodes:
+  collect:
+    themes:
+      - "可可的愿望寄存处"
+      - "今日愿望投递站"
+      - "苹果编号日"
+  repair:
+    themes:
+      - "可可的愿望修补室"
+      - "青苹果重启计划"
+      - "没关系，再试一次"
+  complete:
+    themes:
+      - "可可的星星结业夜"
+      - "愿望点亮日"
+      - "今天完成一颗星"
+  celebrate:
+    themes:
+      - "可可的庆功时间"
+      - "一口小甜点"
+      - "星星奖励派送"
