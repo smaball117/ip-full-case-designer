@@ -1,49 +1,47 @@
 # Roadmap
 
 ## v0.1 — Workflow architecture
-- [x] workflow orchestration
-- [x] modular references
+- [x] modular workflow
 - [x] project templates
-- [x] Apple Magic Cat scaffold
+- [x] Coco test scaffold
 
-## v0.2 — Design-system rebuild
-- [x] identify reference-dependence failure
-- [x] add IP Core system
-- [x] add Narrative Engine
-- [x] add Character DNA + Shape Grammar
-- [x] add Visual DNA system
-- [x] add Typography / Color / Graphic / Illustration systems
-- [x] add Layout Grammar + presets
-- [x] add Theme Engine + Campaign System
-- [x] add Prompt Compiler
-- [x] add Reference Router
-- [x] add QA Engine
-- [x] convert Coco into the first complete system dataset
-- [ ] validate one poster with no external composition reference
-- [ ] validate one merchandise set from system rules
-- [ ] validate one offline concept from narrative rules
+## v0.2 — System exploration
+- [x] experiment with Character DNA
+- [x] experiment with Visual DNA
+- [x] experiment with layout / campaign helpers
+- [x] identify that "system-first, reference-third" does not match the intended workflow
 
-## v0.3 — Character consistency
-- [ ] lock Coco Character DNA v1
-- [ ] test turnaround
-- [ ] test expression system
-- [ ] test outfit translation
-- [ ] score and repair drift
+## v0.3 — Reference-driven IP full-case workflow
+- [x] redefine Skill positioning
+- [x] rewrite main SKILL.md
+- [x] rewrite end-to-end workflow
+- [x] make references first-class inputs
+- [x] reduce hard gates to Concept / Sketch / Character Final
+- [x] redefine final deliverable as a complete IP asset package
+- [ ] align project templates with the new 16-stage folder structure
+- [ ] align Coco project state with work already completed
+- [ ] create stage input/output checklists
+- [ ] create concise prompt patterns for each visual stage
+- [ ] create asset naming/version rules
+- [ ] validate merchandise stage with Coco
+- [ ] validate offline stage with Coco
 
-## v0.4 — Visual identity production
-- [ ] lock Coco Visual DNA v1
-- [ ] production-ready logo cleanup workflow
-- [ ] typography role tests
-- [ ] 2D asset library
+## v0.4 — Production consistency
+- [ ] character identity QA
+- [ ] turnaround QA
+- [ ] expression QA
+- [ ] outfit reference translation QA
+- [ ] logo / poster consistency QA
+- [ ] reference conflict handling tests
 
-## v0.5 — Application validation
-- [ ] campaign family
-- [ ] merchandise family
-- [ ] offline experience
-- [ ] final case-study template
+## v0.5 — Full application validation
+- [ ] complete Coco merchandise set
+- [ ] complete Coco offline application set
+- [ ] complete final case-study package
+- [ ] test a second IP from a different reference set
 
 ## v1.0
-- [ ] complete Coco case
-- [ ] remove redundant legacy rules
-- [ ] document reusable workflow
+- [ ] remove redundant experimental modules
+- [ ] clean documentation
+- [ ] complete reusable templates
 - [ ] public release readiness review
