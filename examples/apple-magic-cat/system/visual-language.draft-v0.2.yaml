@@ -1,0 +1,71 @@
+schema_version: "0.2"
+status: "draft_for_gate_d"
+
+brand_modes:
+  three_d_collectible:
+    material: "细短植绒收藏玩具"
+    lighting: "柔和影棚光"
+    texture: "柔软、干净、不过度毛绒"
+  two_d_flat:
+    outline: "橙红色细线"
+    fills: "纯色块"
+    gradients: "禁止"
+    realistic_shading: "禁止"
+    texture: "极少或无"
+    perspective: "简单、稳定"
+    detail_level: "低到中"
+
+palette:
+  apple_red:
+    hex: "#b9210c"
+    role: "核心识别色"
+  cream:
+    hex: "#f2efe0"
+    role: "主体奶油白 / 中性色"
+  cream_yellow:
+    hex: "#f9d991"
+    role: "星星、奖励、暖色点亮"
+  sky_blue:
+    hex: "#c9ddf5"
+    role: "品牌场域 / 大面积背景"
+  leaf_green:
+    role: "少量苹果叶与状态辅助色"
+
+composition:
+  hero_character_scale: "45–60%"
+  face_protection_zone: "脸周围保持清爽，不叠大文字和大装饰"
+  max_supporting_symbols: 5
+  negative_space: "高"
+  background_complexity: "低"
+  same_screen_character_default: 1
+
+graphics:
+  primary_symbol: "苹果"
+  state_symbol: "星星"
+  secondary:
+    - "蝴蝶结"
+    - "小标签"
+    - "猫耳圆角轮廓"
+  shape_language:
+    - "圆润"
+    - "软膨胀"
+    - "大曲线"
+    - "少锐角"
+
+text_policy:
+  hero_kv: "主标题 + HI COCO / 必要短英文之一"
+  microcopy: "默认禁止"
+  decorative_small_text: "禁止"
+  random_years: "禁止"
+
+density_limits:
+  decorative_families_per_kv: 2
+  support_symbols_max: 5
+  props_near_face_max: 1
+
+avoid:
+  - "元素堆满"
+  - "儿童绘本式高密度场景"
+  - "复杂小字"
+  - "高糖粉色占主导"
+  - "参考图式照搬"
