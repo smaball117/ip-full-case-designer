@@ -26,7 +26,11 @@
 - [ ] validate merchandise stage with Coco
 - [ ] validate offline stage with Coco
 
-## v0.4 — Production consistency
+## v0.4 — Fixed template + production consistency
+- [x] promote the previously tested Coco reference workflow into the fixed default template
+- [x] add 12 fixed reference slots
+- [x] add machine-readable fixed template
+- [x] bind SKILL.md to the fixed template
 - [ ] character identity QA
 - [ ] turnaround QA
 - [ ] expression QA
