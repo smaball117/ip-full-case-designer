@@ -75,6 +75,59 @@ The agent should:
 - record approvals and revisions;
 - move the project toward a complete IP case.
 
+## Fixed reference template
+
+The user's previously tested reference workflow is the **default fixed template** for this Skill.
+
+Read:
+- `templates/FIXED_REFERENCE_TEMPLATE.md`
+- `templates/fixed-reference-template.yaml`
+
+The template fixes:
+- the reference-slot structure;
+- the default output sequence;
+- the expected asset families.
+
+It does **not** fix the visual content.
+
+For every new project, map incoming references into the fixed slots:
+
+```text
+REF-01 overall character / style
+REF-02 face / eyes / expression
+REF-03 body proportion / silhouette
+REF-04 3D material / rendering
+REF-05 palette
+REF-06 outfit / clothing
+REF-07 flat illustration
+REF-08 logo / typography
+REF-09 poster / KV
+REF-10 merchandise
+REF-11 offline / indoor
+REF-12 offline / outdoor
+```
+
+References may arrive gradually.
+Do not force the user to upload the whole pack at project start.
+
+Unless the user explicitly skips or reorders a stage, follow the fixed production spine:
+
+```text
+5 creative directions
+→ IP setting checklist
+→ 5 line sketches
+→ character final / 3D
+→ turnaround
+→ expression grid
+→ outfit grid
+→ 2D flat assets
+→ logo / typography
+→ poster / KV
+→ merchandise
+→ offline
+→ final review
+```
+
 ## Reference rule
 
 Read `references/reference-analysis.md`.
@@ -101,6 +154,8 @@ Use the smallest relevant reference set for the current task.
 ## Workflow
 
 Read `references/workflow.md` when starting or resuming a project.
+
+The workflow below is the execution form of the fixed template.
 
 0. Project Setup
 1. Idea + Reference Intake
