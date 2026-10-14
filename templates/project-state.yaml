@@ -1,4 +1,5 @@
-schema_version: "0.1"
+schema_version: "0.3"
+
 project:
   id: ""
   name: ""
@@ -7,24 +8,52 @@ project:
   updated_at: ""
 
 workflow:
-  current_stage: "00_project_init"
-  current_gate: null
+  current_stage: "00_project_setup"
   next_action: ""
   status: "active"
 
+gates:
+  gate_a_creative_direction:
+    status: "pending"
+    selection: null
+  gate_b_character_sketch:
+    status: "pending"
+    selection: null
+  gate_c_character_final:
+    status: "pending"
+    selection: null
+
+stages:
+  "00_project_setup": "pending"
+  "01_idea_reference_intake": "pending"
+  "02_creative_directions": "pending"
+  "03_ip_setting": "pending"
+  "04_character_sketch": "pending"
+  "05_character_final_3d": "pending"
+  "06_turnaround": "pending"
+  "07_expressions": "pending"
+  "08_actions": "pending"
+  "09_outfits": "pending"
+  "10_2d_assets": "pending"
+  "11_logo_typography": "pending"
+  "12_posters": "pending"
+  "13_merchandise": "pending"
+  "14_offline": "pending"
+  "15_review": "pending"
+
 approved:
+  ip_name: null
   concept_direction: null
-  sketch_candidate: null
-  character_master_version: null
+  character_anchor: null
   character_dna_version: null
-  visual_dna_version: null
 
 references:
-  map_path: "01_references/reference-map.md"
+  map_path: "02_references/reference-map.md"
 
 assets:
-  manifest_path: "00_project/asset-manifest.csv"
+  manifest_path: "asset-manifest.csv"
 
 notes:
   blockers: []
   assumptions: []
+  latest_feedback: []
