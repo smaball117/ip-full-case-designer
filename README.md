@@ -171,3 +171,20 @@ character exploration → 3D → expressions → outfits → flat illustration �
 ## Version
 
 `0.3.0-dev` — reference-driven full-case workflow.
+
+
+## Second validation project
+
+**水母星守 / Jellyfish Star Guardian**
+
+This project validates:
+- starting from a loose idea;
+- combining selected parts from multiple references;
+- converting 2D concept thinking into real collectible-toy 3D language;
+- using manufacturable materials;
+- producing varied outfit series;
+- controlling background complexity;
+- saving a reusable prompt record for every major visual.
+
+See:
+`examples/jellyfish-star-guardian/`
