@@ -4,3 +4,4 @@ JSG-3D-HERO-001,05_character_final_3d,hero_character,v1,approved_for_downstream,
 JSG-TURN-001,06_turnaround,multi_view,v0.8,candidate,chat_output,not_committed,prompts/JSG-TURN-001_v0.8.prompt.md,JSG-3D-HERO-001,REF-01|REF-02,"Turnaround candidate; requires simplification consistency check."
 JSG-OUT-001,09_outfits,outfit_grid_3x3,v0.1,rejected,chat_output,not_committed,prompts/JSG-OUT-001_v0.1.prompt.md,JSG-3D-HERO-001,REF-03|REF-04,"Too similar across looks; backgrounds too complex."
 JSG-OUT-002,09_outfits,outfit_grid_3x3,v0.2,candidate,chat_output,not_committed,prompts/JSG-OUT-002_v0.2.prompt.md,JSG-3D-HERO-001,REF-03|REF-04|REF-05,"Improved outfit variety and background restraint; still under review."
+JSG-EXP-001,07_expressions,expression_grid_3x3,v0.1,planned,chat_output,not_committed,prompts/JSG-EXP-001_v0.1.prompt.md,JSG-3D-HERO-001,REF-01|REF-02,"Nine-expression 3D collectible-toy consistency test."
