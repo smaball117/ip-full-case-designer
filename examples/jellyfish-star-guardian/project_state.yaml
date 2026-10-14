@@ -1,0 +1,59 @@
+schema_version: "0.4"
+
+project:
+  id: "jellyfish-star-guardian"
+  name: "水母星守 / Jellyfish Star Guardian"
+  slug: "jellyfish-star-guardian"
+  created_at: "2026-10-14"
+  updated_at: "2026-10-14"
+
+workflow:
+  current_stage: "09_outfits"
+  next_action: "Refine the 3x3 outfit series using stronger outfit diversity, simple supporting scenes, max 3 background element categories, and save a prompt record for each approved visual."
+  status: "active"
+
+gates:
+  gate_a_creative_direction:
+    status: "approved"
+    selection: "D + E: lively jellyfish patrol spirit + dream-trench sleeping-star guardian"
+  gate_b_character_sketch:
+    status: "approved_by_visual_selection"
+    selection: "transparent jellyfish-head girl; outfit from selected draft; moon lantern and star system from alternate draft"
+  gate_c_character_final:
+    status: "approved_for_downstream"
+    selection: "Q-version 3D collectible-toy jellyfish guardian with transparent star dome and crescent moon lantern"
+
+stages:
+  "00_project_setup": "complete"
+  "01_idea_reference_intake": "complete"
+  "02_creative_directions": "complete"
+  "03_ip_setting": "complete"
+  "04_character_sketch": "complete"
+  "05_character_final_3d": "complete"
+  "06_turnaround": "candidate_complete"
+  "07_expressions": "pending"
+  "08_actions": "pending"
+  "09_outfits": "in_progress"
+  "10_2d_assets": "pending"
+  "11_logo_typography": "pending"
+  "12_posters": "pending"
+  "13_merchandise": "pending"
+  "14_offline": "pending"
+  "15_review": "pending"
+
+approved:
+  working_name: "水母星守 / Jellyfish Star Guardian"
+  concept_direction: "D + E"
+  character_anchor: "JSG-3D-HERO-001"
+  character_dna_version: "v1-operational"
+  primary_symbol: "transparent jellyfish dome with warm glowing stars"
+  signature_prop: "crescent moon lantern"
+
+notes:
+  latest_feedback:
+    - "3D should resemble real collectible-toy product photography, not 2D illustration."
+    - "Forms should be simplified and smooth."
+    - "Use real-world manufacturable materials."
+    - "Outfits should be meaningfully different rather than repeating the same dress."
+    - "Background should not be pure color, but must stay simple and weaker than the subject."
+    - "Use no more than 3 background element categories per look."
