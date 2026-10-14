@@ -9,7 +9,7 @@ project:
 
 workflow:
   current_stage: "13_merchandise"
-  next_action: "Create a focused first merchandise family using the current Coco character anchor, flat assets and Hi Coco logo; then continue to offline applications."
+  next_action: "Collect or assign merchandise references, then generate the first 8-product Coco merchandise family board and score it with the merchandise validation protocol."
   status: "active"
 
 gates:
