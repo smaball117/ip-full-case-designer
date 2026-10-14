@@ -1,6 +1,9 @@
-# Visual Stage Prompt Patterns v0.3
+# Visual Stage Prompt Patterns v0.4
 
 These are **compact execution patterns**, not giant prompts.
+
+Every generated image must also create a matching prompt record using `templates/prompt-record.md`.
+The prompt record is part of the deliverable and should be reusable by another AI.
 
 The Skill should build prompts from:
 - approved character anchor;
@@ -344,3 +347,31 @@ DO NOT
 ```
 
 over long prose.
+
+
+---
+
+# 13. Mandatory prompt-record output
+
+After generating any visual, save or return:
+
+```text
+ASSET ID
+STAGE
+VERSION
+GOAL
+LOCK
+REFERENCE USE
+CHANGE
+CANONICAL PROMPT
+NEGATIVE / DO NOT
+OUTPUT
+REPAIR NOTES
+LEARNINGS
+```
+
+For outfit / themed-series generation, also read:
+`docs/SERIES_OUTFIT_BACKGROUND_RULES.md`.
+
+For project-wide reproducibility, read:
+`docs/REPRODUCIBLE_GENERATION_PROTOCOL.md`.
