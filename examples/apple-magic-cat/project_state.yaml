@@ -1,40 +1,80 @@
-schema_version: "0.1"
+schema_version: "0.3"
+
 project:
   id: "apple-magic-cat"
-  name: "Apple Magic Cat"
+  name: "可可 / Coco — Apple Magic Cat"
   slug: "apple-magic-cat"
   created_at: "2026-09-21"
-  updated_at: "2026-09-21"
+  updated_at: "2026-10-14"
 
 workflow:
-  current_stage: "04_sketch_exploration"
-  current_gate: "B"
-  next_action: "Develop five form-focused line-sketch directions within the approved Coco concept, then select one for Character Master v0."
+  current_stage: "13_merchandise"
+  next_action: "Create a focused first merchandise family using the current Coco character anchor, flat assets and Hi Coco logo; then continue to offline applications."
   status: "active"
 
+gates:
+  gate_a_creative_direction:
+    status: "approved"
+    selection: "A Wish Keeper + limited Dessert Magician behavior"
+  gate_b_character_sketch:
+    status: "approved"
+    selection: "Selected cat sketch refined with large cat pupils and star-shaped eye highlights"
+  gate_c_character_final:
+    status: "approved_for_downstream"
+    selection: "Cream-white flocked 3D Coco with red magic hat/cape, apple wand, large brown-gold cat eyes and star highlights"
+    note: "The character has been repeatedly reused across expressions, outfits, flat illustration, logo and posters; treat it as the operational character anchor. If the user explicitly redesigns it later, create a new version."
+
+stages:
+  "00_project_setup": "complete"
+  "01_idea_reference_intake": "complete"
+  "02_creative_directions": "complete"
+  "03_ip_setting": "complete"
+  "04_character_sketch": "complete"
+  "05_character_final_3d": "complete"
+  "06_turnaround": "candidate_complete"
+  "07_expressions": "complete"
+  "08_actions": "pending"
+  "09_outfits": "complete"
+  "10_2d_assets": "in_progress"
+  "11_logo_typography": "candidate_complete"
+  "12_posters": "in_progress"
+  "13_merchandise": "current"
+  "14_offline": "pending"
+  "15_review": "pending"
+
 approved:
-  concept_direction: "A Wish Keeper + limited E Dessert Magician behavior"
   ip_name: "可可 / Coco"
+  concept_direction: "Wish Keeper"
   audience: "young women"
-  core_personality:
+  personality:
     - "brave"
     - "gluttonous"
     - "clingy"
-  sketch_candidate: null
-  character_master_version: null
-  character_dna_version: null
-  visual_dna_version: null
-
-world_rules:
-  apple_role: "wish collector"
-  success_state: "a star appears inside after a completed wish/task"
+  character_anchor: "CC-3D-001"
+  character_dna_version: "v1-operational"
+  primary_symbol: "wish-collecting apple"
+  success_state: "a star appears inside the apple after a complete task/wish"
   failure_state: "apple turns green"
-  dessert_magic: "very occasional celebration behavior"
+
+current_visual_assets:
+  flat_character_anchor: "CC-2D-001"
+  logo_candidate: "CC-LOGO-001"
+  latest_poster_vertical: "CC-POST-003"
+  latest_poster_horizontal: "CC-POST-004"
+
+references:
+  map_path: "reference_map.md"
+
+assets:
+  manifest_path: "asset_manifest.csv"
 
 notes:
   blockers: []
   assumptions:
-    - "The current 3D cat exploration is treated as visual research, not yet a locked Character Master."
-    - "Gluttony is currently treated as Coco's primary useful flaw."
-    - "Apple is interpreted as a favorite; banana is interpreted as a dislike."
-    - "Initial apple state and retry rules remain intentionally open."
+    - "Banana remains a disliked object/food unless the user changes it."
+    - "Dessert magic remains an occasional celebration behavior, not Coco's main identity."
+    - "Action sheet has not yet been completed as a dedicated asset."
+  latest_feedback:
+    - "Reference use is welcome, but the Skill must turn references into a complete IP workflow rather than only imitate images."
+    - "Poster compositions should avoid crowding and unnecessary small text."
+    - "Character should remain the primary visual focus."
