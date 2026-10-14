@@ -21,8 +21,8 @@
 - [x] align project templates with the new 16-stage folder structure
 - [x] align Coco project state with work already completed
 - [x] create stage input/output checklists
-- [ ] create concise prompt patterns for each visual stage
-- [ ] create asset naming/version rules
+- [x] create concise prompt patterns for each visual stage
+- [x] create asset naming/version rules
 - [ ] validate merchandise stage with Coco
 - [ ] validate offline stage with Coco
 
