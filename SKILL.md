@@ -48,7 +48,17 @@ For every stage:
 - final review and case packaging.
 
 This Skill is not prompt-only.
-When image generation is available and the user asks for an image, create the visual output rather than returning only a prompt.
+
+When image generation is available and the user asks for an image:
+1. create the visual output;
+2. create a reusable prompt record for that visual;
+3. preserve the prompt with the asset.
+
+Read:
+- `docs/REPRODUCIBLE_GENERATION_PROTOCOL.md`
+- `templates/prompt-record.md`
+
+An image-only result is incomplete for this Skill.
 
 ## User and Agent roles
 
@@ -218,7 +228,18 @@ Once the character is approved, it becomes the new primary anchor.
 
 Later references must not accidentally redesign the character.
 
-## Outfit rule
+## Outfit / series rule
+
+Read `docs/SERIES_OUTFIT_BACKGROUND_RULES.md`.
+
+Do not hard-code a permanent wardrobe into the Skill.
+Outfits should vary dynamically by current theme, role and user references.
+
+For series generation:
+- each look should differ in at least 2–3 meaningful dimensions;
+- background element categories should usually be <= 3;
+- background must remain visually weaker than the character;
+- real-world manufacturable materials should be used for 3D collectible outputs.
 
 From clothing references, extract:
 - silhouette;
@@ -284,13 +305,32 @@ When space references are supplied:
 
 Do not merely paste character graphics onto a generic booth.
 
+## Prompt traceability
+
+Every generated visual should have a matching prompt record.
+
+The prompt record must include:
+- asset ID;
+- stage;
+- version / status;
+- goal;
+- locked identity;
+- reference use;
+- canonical reusable prompt;
+- negative / do-not constraints;
+- output format;
+- repair notes;
+- learnings.
+
+Use the canonical prompt as the portable source of truth for future AIs.
+
 ## Project files
 
 Keep state lightweight:
 
 - `project_state.yaml` — current stage and next action;
 - `decision_log.md` — major approvals and revisions;
-- `asset_manifest.csv` — assets and status;
+- `asset_manifest.csv` — assets, status and matching prompt-record path;
 - `character_dna.yaml` — approved identity after Gate C;
 - `reference_map.md` — important reference roles.
 
