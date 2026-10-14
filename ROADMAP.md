@@ -31,6 +31,9 @@
 - [x] add 12 fixed reference slots
 - [x] add machine-readable fixed template
 - [x] bind SKILL.md to the fixed template
+- [x] require reusable prompt record for every generated visual
+- [x] add cross-AI reproducible generation protocol
+- [x] add series outfit/background restraint rules
 - [ ] character identity QA
 - [ ] turnaround QA
 - [ ] expression QA
