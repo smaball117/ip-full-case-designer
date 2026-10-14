@@ -1,0 +1,94 @@
+schema_version: "0.4"
+template_name: "default-ip-full-case"
+template_status: "fixed_default"
+
+reference_slots:
+  REF_01:
+    name: "core_character_overall_style"
+    stage_use: ["creative_directions","sketch","character_final"]
+    required_at_start: false
+  REF_02:
+    name: "face_eyes_expression"
+    stage_use: ["sketch","character_final","expressions"]
+    required_at_start: false
+  REF_03:
+    name: "body_proportion_silhouette"
+    stage_use: ["sketch","3d","turnaround","plush"]
+    required_at_start: false
+  REF_04:
+    name: "3d_material_rendering"
+    stage_use: ["3d","figure","product_visualization"]
+    required_at_start: false
+  REF_05:
+    name: "color_palette"
+    stage_use: ["character","2d","logo","poster","merchandise","offline"]
+    required_at_start: false
+  REF_06:
+    name: "outfit_clothing"
+    multiple: true
+    stage_use: ["outfits"]
+    required_at_start: false
+  REF_07:
+    name: "flat_illustration_graphic_style"
+    stage_use: ["2d_assets","stickers","poster"]
+    required_at_start: false
+  REF_08:
+    name: "logo_typography"
+    stage_use: ["logo","campaign_titles"]
+    required_at_start: false
+  REF_09:
+    name: "poster_kv"
+    stage_use: ["poster"]
+    required_at_start: false
+  REF_10:
+    name: "merchandise"
+    multiple: true
+    stage_use: ["merchandise"]
+    required_at_start: false
+  REF_11:
+    name: "offline_indoor"
+    multiple: true
+    stage_use: ["offline"]
+    required_at_start: false
+  REF_12:
+    name: "offline_outdoor"
+    multiple: true
+    stage_use: ["offline"]
+    required_at_start: false
+
+fixed_output_sequence:
+  - "01_five_creative_directions"
+  - "02_ip_setting_checklist"
+  - "03_five_line_sketches"
+  - "04_character_final_3d"
+  - "05_turnaround"
+  - "06_expression_grid"
+  - "07_outfit_grid"
+  - "08_2d_flat_assets"
+  - "09_logo_typography"
+  - "10_poster_kv"
+  - "11_merchandise_family"
+  - "12_offline_applications"
+  - "13_final_review_archive"
+
+defaults:
+  creative_directions: 5
+  sketch_directions: 5
+  expression_grid: "3x3"
+  outfit_grid: "3x3"
+  poster_ratios: ["3:4","16:9"]
+  merchandise_first_family:
+    - "collectible_figure"
+    - "plush"
+    - "acrylic_stand"
+    - "badge_pin"
+    - "keychain"
+    - "sticker_sheet"
+    - "tote_or_pouch"
+    - "blind_box_or_gift_packaging"
+
+rule:
+  references_can_arrive_gradually: true
+  preserve_approved_assets_downstream: true
+  new_reference_must_not_redesign_locked_character: true
+  user_can_skip_or_reorder_explicitly: true
