@@ -48,6 +48,51 @@ Final Review / Case Package
 - a "swap my character into this reference" tool;
 - a rigid pipeline that ignores user choices.
 
+## Fixed template
+
+The reference workflow already tested with Coco is now the **default fixed template** for every new IP project.
+
+The template fixes the workflow structure, not the visual style.
+
+Reference slots:
+
+```text
+REF-01 Character / overall style
+REF-02 Face / eyes / expression
+REF-03 Proportion / silhouette
+REF-04 3D material / rendering
+REF-05 Color palette
+REF-06 Outfit / clothing
+REF-07 Flat illustration
+REF-08 Logo / typography
+REF-09 Poster / KV
+REF-10 Merchandise
+REF-11 Offline / indoor
+REF-12 Offline / outdoor
+```
+
+Default outputs:
+
+```text
+5 creative directions
+→ IP setting
+→ 5 sketches
+→ 3D final
+→ turnaround
+→ expressions
+→ outfits
+→ flat assets
+→ logo
+→ posters
+→ merchandise
+→ offline
+→ review
+```
+
+See:
+- `templates/FIXED_REFERENCE_TEMPLATE.md`
+- `templates/fixed-reference-template.yaml`
+
 ## Working style
 
 The user can feed references gradually.
