@@ -8,8 +8,8 @@ project:
   updated_at: "2026-10-14"
 
 workflow:
-  current_stage: "09_outfits"
-  next_action: "Refine the 3x3 outfit series using stronger outfit diversity, simple supporting scenes, max 3 background element categories, and save a prompt record for each approved visual."
+  current_stage: "07_expressions"
+  next_action: "Generate and review JSG-EXP-001 expression grid; then proceed to the dedicated action grid before returning to final outfit refinement."
   status: "active"
 
 gates:
@@ -31,7 +31,7 @@ stages:
   "04_character_sketch": "complete"
   "05_character_final_3d": "complete"
   "06_turnaround": "candidate_complete"
-  "07_expressions": "pending"
+  "07_expressions": "in_progress"
   "08_actions": "pending"
   "09_outfits": "in_progress"
   "10_2d_assets": "pending"
