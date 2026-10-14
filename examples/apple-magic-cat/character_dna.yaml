@@ -1,0 +1,73 @@
+schema_version: "0.3"
+status: "approved_for_downstream"
+version: "v1-operational"
+
+character:
+  name: "可可 / Coco"
+  species_or_entity: "cream-white cat"
+  role: "Magic Academy wish-collector apprentice"
+  personality:
+    - "brave"
+    - "gluttonous"
+    - "clingy"
+
+silhouette:
+  head: "very large, soft and rounded; visually dominant"
+  body: "very small and compact"
+  limbs: "short, thick, rounded"
+  ears: "clear triangular cat ears; must not read as bear ears"
+  tail: "fluffy rounded cat tail"
+
+face:
+  eyes: "very large cat eyes"
+  pupils: "large brown-gold pupils"
+  highlights: "distinct star-shaped main highlights"
+  eyebrows: "small expressive brows"
+  nose: "tiny warm pink/red-brown nose"
+  mouth: "small lively mouth; tongue-out expression allowed"
+  cheeks: "soft blush with short whisker/cheek marks"
+  avoid:
+    - "bear-like muzzle"
+    - "anime-heavy eye whites"
+    - "adult human eyebrow styling"
+
+color:
+  cream_white: "#f2efe0"
+  apple_red: "#b9210c"
+  cream_yellow: "#f9d991"
+  pale_blue: "#c9ddf5"
+  small_green: "apple-leaf / failure-state accent only"
+
+signature:
+  primary_symbol: "wish-collecting apple"
+  default_headwear: "red apple-themed magic hat with cream bow"
+  neck_detail: "red bow / apple motif"
+  prop: "small apple wand with pale-blue bow"
+  success_symbol: "star inside apple"
+  failure_state: "green apple"
+
+material:
+  three_d: "fine flocked / velvety collectible-toy surface"
+  two_d: "flat graphic translation; no fur rendering required"
+
+scale_rules:
+  face_priority: "head and face must dominate recognition"
+  props: "small accessory scale; never compete with the head"
+  symbol_count: "keep secondary symbols restrained"
+
+flexible:
+  - "expression"
+  - "pose"
+  - "outfit"
+  - "small props"
+  - "campaign scene"
+  - "seasonal accessories"
+
+requires_explicit_redesign:
+  - "species"
+  - "core head silhouette"
+  - "large cat-eye construction"
+  - "star-shaped eye highlights"
+  - "cream-white base identity"
+  - "wish apple as primary symbol"
+  - "big-head small-body proportion"
