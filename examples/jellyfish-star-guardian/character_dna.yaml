@@ -1,0 +1,92 @@
+schema_version: "0.4"
+status: "approved_for_downstream"
+version: "v1-operational"
+
+character:
+  working_name: "水母星守 / Jellyfish Star Guardian"
+  entity: "deep-sea jellyfish guardian girl"
+  role: "dream-trench patrol and guardian spirit"
+  personality:
+    - "curious"
+    - "gentle"
+    - "lively"
+    - "slightly dreamy"
+
+silhouette:
+  head: "very large transparent jellyfish dome; clean rounded bell shape"
+  body: "small compact Q-version body"
+  limbs: "short rounded limbs"
+  hair: "short lavender-violet hair under the jellyfish dome"
+  motion: "light floating / stepping / drifting feeling"
+
+face:
+  eyes: "large blue-violet collectible-toy eyes"
+  expression: "soft, curious, gentle"
+  mouth: "small and simple"
+  blush: "light"
+  avoid:
+    - "anime-style complex linework"
+    - "mature female face"
+    - "excessive eyelashes"
+
+jellyfish_head:
+  outer_shape: "transparent rounded jellyfish dome"
+  edge: "soft scalloped rim with smooth curves"
+  interior:
+    - "3–5 warm glowing star elements"
+    - "very small sparse sparkle points only"
+  tentacle_extensions: "few short rounded translucent drops / tendrils"
+  rule: "keep the dome visually simple; no dense internal galaxy texture"
+
+costume:
+  base_direction: "short layered ocean-fairy dress"
+  core_shape: "simple clean silhouette"
+  translucent_parts: "limited to edges / overskirt accents"
+  rule: "avoid too many ruffles, chains, pearls, bows and tiny decorations in one look"
+
+signature_prop:
+  name: "crescent moon lantern"
+  construction:
+    - "metal-plated crescent frame"
+    - "clear acrylic or transparent resin globe"
+    - "warm LED-like luminous core for display visualization"
+  scale: "small accessory; secondary to face and jellyfish head"
+
+palette:
+  primary:
+    - "blue-violet"
+    - "lavender"
+    - "clear translucent blue"
+  accent:
+    - "warm cream-yellow stars"
+    - "small gold metal accents"
+  optional_theme_colors:
+    - "soft pink"
+    - "aqua"
+    - "coral"
+    - "navy"
+
+materials:
+  face_body: "painted PVC or resin"
+  jellyfish_dome: "clear resin / transparent PVC / acrylic-like clear part"
+  translucent_costume: "transparent PVC or clear resin overlay"
+  lantern: "metal-plated plastic + clear resin/acrylic globe"
+  matte_parts: "matte painted PVC"
+  rule: "translate all fantasy effects into real manufacturable material language"
+
+locked_identity:
+  - "transparent jellyfish dome"
+  - "warm stars inside dome"
+  - "lavender hair"
+  - "large blue-violet eyes"
+  - "Q-version small body"
+  - "deep-sea guardian identity"
+  - "crescent moon lantern as signature prop"
+
+flexible:
+  - "outfit"
+  - "head accessory"
+  - "pose"
+  - "seasonal palette"
+  - "secondary prop"
+  - "background cue"
