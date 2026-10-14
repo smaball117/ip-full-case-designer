@@ -1,0 +1,13 @@
+asset_id,stage,type,version,status,location_type,path_or_ref,source_assets,reference_ids,notes
+CC-SKETCH-001,04_character_sketch,selected_sketch,v1,approved,chat_output,not_committed,,REF-CHAR-01|REF-FACE-01,"Selected sketch refined to clearly feline face with large star-highlight eyes"
+CC-3D-001,05_character_final_3d,hero_character,v1,approved_for_downstream,chat_output,not_committed,CC-SKETCH-001,REF-COLOR-01,"Cream-white flocked Coco; current primary character anchor"
+CC-TURN-001,06_turnaround,multi_view,v1,candidate,chat_output,not_committed,CC-3D-001,REF-ANCHOR-01,"Three-view / intro-card style candidate"
+CC-EXP-001,07_expressions,expression_grid_3x3,v1,approved,chat_output,not_committed,CC-3D-001,REF-ANCHOR-01,"Nine expressions; no-text version preferred"
+CC-OUT-001,09_outfits,autumn_outfit_grid_3x3,v1,approved,chat_output,not_committed,CC-3D-001,REF-ANCHOR-01,"Nine autumn outfits"
+CC-OUT-002,09_outfits,four_season_outfits,v1,candidate,chat_output,not_committed,CC-3D-001,REF-ANCHOR-01,"Four-season outfit exploration"
+CC-2D-001,10_2d_assets,flat_character_style,v1,approved_style_direction,chat_output,not_committed,CC-OUT-001,REF-FLAT-01,"Flat illustration translation with orange-red fine outline"
+CC-LOGO-001,11_logo_typography,logo_lockup,v1,candidate,chat_output,not_committed,,REF-LOGO-01,"Hi Coco + 可可 2026; red-background logo result"
+CC-POST-001,12_posters,autumn_party_vertical,v1,rejected_direction,chat_output,not_committed,CC-2D-001|CC-LOGO-001,REF-POSTER-01,"Too crowded and too close to reference"
+CC-POST-002,12_posters,autumn_party_horizontal,v1,rejected_direction,chat_output,not_committed,CC-2D-001|CC-LOGO-001,REF-POSTER-01,"Too crowded and too close to reference"
+CC-POST-003,12_posters,wish_checkin_vertical,v1,candidate,chat_output,not_committed,CC-2D-001|CC-LOGO-001,REF-POSTER-01,"Wish Check-in 3:4; simplified direction"
+CC-POST-004,12_posters,wish_checkin_horizontal,v1,candidate,chat_output,not_committed,CC-2D-001|CC-LOGO-001,REF-POSTER-01,"Wish Check-in 16:9; simplified direction"
