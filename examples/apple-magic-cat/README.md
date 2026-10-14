@@ -93,3 +93,10 @@ See:
 - `reference_map.md`
 - `asset_manifest.csv`
 - `current_progress.md`
+
+
+## Canonical template role
+
+Coco is the canonical working example for the Skill's fixed reference template.
+
+See `fixed_template_mapping.md` for how the real reference pack maps to REF-01 through REF-12 and the fixed output sequence.
