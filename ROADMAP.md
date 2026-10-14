@@ -37,15 +37,18 @@
 - [ ] character identity QA
 - [ ] turnaround QA
 - [ ] expression QA
-- [ ] outfit reference translation QA
+- [x] outfit reference translation QA
 - [ ] logo / poster consistency QA
-- [ ] reference conflict handling tests
+- [x] reference conflict handling tests
+
+- [x] Jellyfish Star Guardian prompt-record validation
+- [x] background restraint rule validated in second IP
 
 ## v0.5 — Full application validation
 - [ ] complete Coco merchandise set
 - [ ] complete Coco offline application set
 - [ ] complete final case-study package
-- [ ] test a second IP from a different reference set
+- [x] test a second IP from a different reference set
 
 ## v1.0
 - [ ] remove redundant experimental modules
