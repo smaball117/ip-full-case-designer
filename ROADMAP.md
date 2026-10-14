@@ -18,9 +18,9 @@
 - [x] make references first-class inputs
 - [x] reduce hard gates to Concept / Sketch / Character Final
 - [x] redefine final deliverable as a complete IP asset package
-- [ ] align project templates with the new 16-stage folder structure
-- [ ] align Coco project state with work already completed
-- [ ] create stage input/output checklists
+- [x] align project templates with the new 16-stage folder structure
+- [x] align Coco project state with work already completed
+- [x] create stage input/output checklists
 - [ ] create concise prompt patterns for each visual stage
 - [ ] create asset naming/version rules
 - [ ] validate merchandise stage with Coco
