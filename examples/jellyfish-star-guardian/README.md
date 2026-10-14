@@ -82,3 +82,14 @@ See:
 - `reference_map.md`
 - `asset_manifest.csv`
 - `prompts/`
+
+
+## Important project files
+
+- `world_setting.md` — 世界观、角色使命、性格、视觉符号与可扩展故事结构
+- `character_dna.yaml` — 已锁定角色视觉 DNA
+- `reference_map.md` — 参考图分别控制什么
+- `PROMPT_INDEX.md` — 所有可复用 Prompt 的索引
+- `prompts/` — 每个阶段的完整 Prompt Record
+- `project_state.yaml` — 当前项目进度
+- `asset_manifest.csv` — 资产与 Prompt 对应关系
