@@ -8,8 +8,8 @@ project:
   updated_at: "2026-10-14"
 
 workflow:
-  current_stage: "12_posters"
-  next_action: "Create the primary 3:4 campaign KV first: character-led, restrained environment, max 3 background element categories, minimal title-only typography. After approval, adapt to 16:9."
+  current_stage: "13_merchandise"
+  next_action: "Develop the merchandise family using the approved character, 2D assets, logo and poster language. Route different assets to different product types instead of repeating the same full-body artwork."
   status: "active"
 
 gates:
@@ -36,8 +36,8 @@ stages:
   "09_outfits": "complete"
   "10_2d_assets": "complete"
   "11_logo_typography": "complete"
-  "12_posters": "in_progress"
-  "13_merchandise": "pending"
+  "12_posters": "complete"
+  "13_merchandise": "in_progress"
   "14_offline": "pending"
   "15_review": "pending"
 
