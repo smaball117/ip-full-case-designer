@@ -8,8 +8,8 @@ project:
   updated_at: "2026-10-14"
 
 workflow:
-  current_stage: "10_2d_assets"
-  next_action: "Translate the approved 3D character into a clean 2D flat-asset system while preserving face, jellyfish dome, stars, palette and silhouette. Produce reusable prompt records alongside the visual assets."
+  current_stage: "11_logo_typography"
+  next_action: "Develop the working-name logo and typography system using Jellyfish Star / 水母星守 as a provisional title; create a primary lockup, compact mark, icon and typography direction without locking the final character name."
   status: "active"
 
 gates:
@@ -34,8 +34,8 @@ stages:
   "07_expressions": "complete"
   "08_actions": "complete"
   "09_outfits": "complete"
-  "10_2d_assets": "in_progress"
-  "11_logo_typography": "pending"
+  "10_2d_assets": "complete"
+  "11_logo_typography": "in_progress"
   "12_posters": "pending"
   "13_merchandise": "pending"
   "14_offline": "pending"
