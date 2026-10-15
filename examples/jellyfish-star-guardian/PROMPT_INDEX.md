@@ -51,3 +51,10 @@ For future generation, use:
 
 Do not use rejected prompts as final instructions.
 Use them only for failure-analysis / repair learning.
+
+
+## 2D flat asset development
+
+- `prompts/JSG-2D-001_v0.1.prompt.md`
+  - translates the approved 3D character into a simplified flat illustration system
+  - intended for stickers, badges, packaging, posters and graphic support assets
