@@ -58,3 +58,35 @@ Use them only for failure-analysis / repair learning.
 - `prompts/JSG-2D-001_v0.1.prompt.md`
   - translates the approved 3D character into a simplified flat illustration system
   - intended for stickers, badges, packaging, posters and graphic support assets
+
+
+## Action development
+
+- `prompts/JSG-ACT-001_v1.0.prompt.md`
+  - action-sheet structure
+- `prompts/JSG-ACT-002_v1.1.prompt.md`
+  - stricter action-only version with outfit/background locks
+
+## Logo / typography
+
+- `prompts/JSG-LOGO-001_v0.1.prompt.md`
+  - working-name logo system
+  - final name remains open
+
+## Poster / KV
+
+- `prompts/JSG-POST-001_v0.1.prompt.md`
+  - restrained 3:4 hero KV
+  - character > story symbol > atmosphere > title
+
+## Merchandise
+
+- `prompts/JSG-MERCH-001_v0.1.prompt.md`
+  - asset routing by product type
+  - manufacturable material logic
+
+## Offline
+
+- `prompts/JSG-OFF-001_v0.1.prompt.md`
+  - Dream Trench pop-up / mall installation
+  - hero installation + display + photo/interaction
