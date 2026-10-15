@@ -5,12 +5,12 @@ project:
   name: "水母星守 / Jellyfish Star Guardian"
   slug: "jellyfish-star-guardian"
   created_at: "2026-10-14"
-  updated_at: "2026-10-14"
+  updated_at: "2026-10-15"
 
 workflow:
-  current_stage: "14_offline"
-  next_action: "Develop the first offline pop-up / mall installation concept based on the Dream Trench world. Use one hero installation, one product display zone and one photo/interaction zone. Keep spatial elements large, simple and buildable."
-  status: "active"
+  current_stage: "15_review"
+  next_action: "Optional polish only: final naming, turnaround cleanup, canonical expression sheet, standalone action sheet, and final logo lockup."
+  status: "complete_with_open_items"
 
 gates:
   gate_a_creative_direction:
@@ -38,8 +38,8 @@ stages:
   "11_logo_typography": "complete"
   "12_posters": "complete"
   "13_merchandise": "complete"
-  "14_offline": "in_progress"
-  "15_review": "pending"
+  "14_offline": "complete"
+  "15_review": "complete"
 
 approved:
   working_name: "水母星守 / Jellyfish Star Guardian"
