@@ -9,7 +9,7 @@ project:
 
 workflow:
   current_stage: "07_expressions"
-  next_action: "Generate and review JSG-EXP-001 expression grid; then proceed to the dedicated action grid before returning to final outfit refinement."
+  next_action: "Create a strict expression-only 3x3 sheet using the approved 3D character anchor; after approval proceed to the action sheet, then 2D flat assets."
   status: "active"
 
 gates:
@@ -33,7 +33,7 @@ stages:
   "06_turnaround": "candidate_complete"
   "07_expressions": "in_progress"
   "08_actions": "pending"
-  "09_outfits": "in_progress"
+  "09_outfits": "complete"
   "10_2d_assets": "pending"
   "11_logo_typography": "pending"
   "12_posters": "pending"
