@@ -45,6 +45,7 @@
 - [x] background restraint rule validated in second IP
 
 ## v0.5 — Full application validation
+- [x] complete Jellyfish Star Guardian end-to-end case
 - [ ] complete Coco merchandise set
 - [ ] complete Coco offline application set
 - [ ] complete final case-study package
