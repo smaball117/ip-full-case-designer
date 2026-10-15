@@ -8,8 +8,8 @@ project:
   updated_at: "2026-10-14"
 
 workflow:
-  current_stage: "13_merchandise"
-  next_action: "Develop the merchandise family using the approved character, 2D assets, logo and poster language. Route different assets to different product types instead of repeating the same full-body artwork."
+  current_stage: "14_offline"
+  next_action: "Develop the first offline pop-up / mall installation concept based on the Dream Trench world. Use one hero installation, one product display zone and one photo/interaction zone. Keep spatial elements large, simple and buildable."
   status: "active"
 
 gates:
@@ -37,8 +37,8 @@ stages:
   "10_2d_assets": "complete"
   "11_logo_typography": "complete"
   "12_posters": "complete"
-  "13_merchandise": "in_progress"
-  "14_offline": "pending"
+  "13_merchandise": "complete"
+  "14_offline": "in_progress"
   "15_review": "pending"
 
 approved:
