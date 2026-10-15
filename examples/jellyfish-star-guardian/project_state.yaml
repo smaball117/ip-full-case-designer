@@ -8,8 +8,8 @@ project:
   updated_at: "2026-10-14"
 
 workflow:
-  current_stage: "07_expressions"
-  next_action: "Create a strict expression-only 3x3 sheet using the approved 3D character anchor; after approval proceed to the action sheet, then 2D flat assets."
+  current_stage: "08_actions"
+  next_action: "Create a 3x3 action sheet using the approved character identity and base outfit; vary body action and silhouette only, keep props/background minimal, then proceed to 2D flat assets."
   status: "active"
 
 gates:
@@ -31,8 +31,8 @@ stages:
   "04_character_sketch": "complete"
   "05_character_final_3d": "complete"
   "06_turnaround": "candidate_complete"
-  "07_expressions": "in_progress"
-  "08_actions": "pending"
+  "07_expressions": "complete"
+  "08_actions": "in_progress"
   "09_outfits": "complete"
   "10_2d_assets": "pending"
   "11_logo_typography": "pending"
