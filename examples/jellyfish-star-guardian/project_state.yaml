@@ -8,8 +8,8 @@ project:
   updated_at: "2026-10-14"
 
 workflow:
-  current_stage: "11_logo_typography"
-  next_action: "Develop the working-name logo and typography system using Jellyfish Star / 水母星守 as a provisional title; create a primary lockup, compact mark, icon and typography direction without locking the final character name."
+  current_stage: "12_posters"
+  next_action: "Create the primary 3:4 campaign KV first: character-led, restrained environment, max 3 background element categories, minimal title-only typography. After approval, adapt to 16:9."
   status: "active"
 
 gates:
@@ -35,8 +35,8 @@ stages:
   "08_actions": "complete"
   "09_outfits": "complete"
   "10_2d_assets": "complete"
-  "11_logo_typography": "in_progress"
-  "12_posters": "pending"
+  "11_logo_typography": "complete"
+  "12_posters": "in_progress"
   "13_merchandise": "pending"
   "14_offline": "pending"
   "15_review": "pending"
